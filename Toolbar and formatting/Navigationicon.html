@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<title></title>
+	<style type="text/css">
+		.nav-3-9 .ui-btn .ui-btn-inner{
+			padding-top: 40px !important;
+		}
+		.nav-3-9 .ui-btn .ui-icon{
+			width: 30px !important;
+			height: 30px !important;
+			margin-left: -15px !important; 
+			box-shadow: none !important;
+			-moz-box-shadow: none !important;
+			-webkit-box-shadow: none !important;
+			-webkit-border-radius: 0 !important;
+			border-radius: 0 !important;
+		}
+		.books .ui-icon{
+			background: url(/images/icon/01.png) no-repeat;
+			background-size: 18px 26px;
+		}
+		.music .ui-icon{
+			background: url(/images/icon/02.png) 50% 50% no-repeat;
+			background-size: 158px 24px;
+		}
+		.movie .ui-icon{
+			background: url(/images/icon/03.png) 50% 50% no-repeat;
+			background-size: 19px 25px;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- 自定义图标 -->
+	<div data-role="page">
+		<div data-role="header" class="nav-3-9">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="custom" class="books ui-btn-active">图书</a></li>
+					<li><a href="#" data-icon="custom" class="music">音乐</a></li>
+					<li><a href="#" data-icon="custom" class="movie">影视</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<p>这是自定义图标</p>
+		</div>
+		<div data-role="footer">
+			<h4>@2012 rttop</h4>
+		</div>
+	</div>
+	<!-- 设置导航栏图标 -->
+	<div data-role="page" id="e1">
+		<div data-role="header">
+			<div data-role="navbar" data-iconpos="left">
+				<ul>
+					<li><a href="#" data-icon="info" class="ui-btn-active">图书</a></li>
+					<li><a href="#e2" data-icon="alert">音乐</a></li>
+					<li><a href="#e3" data-icon="gear">影视</a></li>
+				</ul>
+			</div>
+			<div data-role="navbar" data-iconpos="right">
+				<ul>
+					<li><a href="#" data-icon="info">图书</a></li>
+					<li><a href="#e2" data-icon="alert" class="ui-btn-active">音乐</a></li>
+					<li><a href="#e3" data-icon="gear">影视</a></li>
+				</ul>
+			</div>
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a href="#" data-icon="info">图书</a></li>
+					<li><a href="#e2" data-icon="alert">音乐</a></li>
+					<li><a href="#e3" data-icon="gear" class="ui-btn-active">影视</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<p>这是图书页面</p>
+		</div>
+		<div data-role="footer">
+			<h4>@2012 rttop</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="e2">
+		<div data-role="header">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#e1" data-icon="info">图书</a></li>
+					<li><a href="#" data-icon="alert" class="ui-btn-active">音乐</a></li>
+					<li><a href="#e3" data-icon="gear">影视</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<p>这是音乐页面</p>
+		</div>
+		<div data-role="footer">
+			<h4>@2012 rttop</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="e3">
+		<div data-role="header">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#e1" data-icon="info">图书</a></li>
+					<li><a href="#e2" data-icon="alert">音乐</a></li>
+					<li><a href="#" data-icon="gear" class="ui-btn-active">影视</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<p>这是影视页面</p>
+		</div>
+		<div data-role="footer">
+			<h4>@2012 rttop</h4>
+		</div>
+	</div>
+</body>
+</html>

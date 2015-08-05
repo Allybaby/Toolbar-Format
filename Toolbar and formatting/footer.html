@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<title></title>
+</head>
+<body>
+<!-- 添加表单元素 -->
+	<div data-role="page">
+		<div data-role="header"><h1>头部标题</h1></div>
+		<div data-role="content">
+			<p>添加尾部栏按钮</p>
+		</div>
+		<div data-role="footer" data-position="inline" class="ui-bar">
+			<label for="selLink">友情链接</label>
+			<select name="selLink" id="selLink">
+				<option value="0">请选择</option>
+				<option value="1">公司1</option>
+				<option value="2">公司2</option>
+				<option value="3">公司3</option>
+			</select>
+		</div>
+	</div>
+
+	<!-- 尾部栏 -->
+	<div data-role="page">
+		<div data-role="header"><h1>头部标题</h1></div>
+		<div data-role="content">
+			<p>添加尾部栏按钮</p>
+		</div>
+		<div data-role="footer">
+			<div data-role="controlgroup" data-type="horizontal">   <!--水平顺序排列-->
+				<a href="#" data-role="button" data-icon="home">关于我们</a>
+				<a href="#" data-role="button" data-icon="forward">联系我们</a>
+			</div>
+		</div>
+		<div data-role="footer" class="ui-bar">
+			<a href="#" data-role="button" data-icon="home">关于我们</a>
+			<a href="#" data-role="button" data-icon="forward">联系我们</a>
+		</div>
+	</div>
+</body>
+</html>
